@@ -1,0 +1,20 @@
+# Java / Spring Boot
+backend/target/
+smartcart/target/
+
+# Node / React
+smartcart-frontend/node_modules/
+smartcart-frontend/dist/
+
+# Environment files
+.env
+.env.local
+*.env
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
