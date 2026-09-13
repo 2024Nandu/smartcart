@@ -1,4 +1,4 @@
-package com.smart.smartcart.Controller;
+package com.smart.smartcart.controller;
 
 import com.smart.smartcart.model.Category;
 import com.smart.smartcart.service.CategoryService;
