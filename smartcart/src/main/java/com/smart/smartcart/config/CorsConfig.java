@@ -1,3 +1,4 @@
+
 package com.smart.smartcart.config;
 
 import org.springframework.context.annotation.Configuration;
@@ -9,10 +10,11 @@ public class CorsConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-
         registry.addMapping("/api/**")
                 .allowedOrigins(
                         "http://localhost:5173",
+                        "http://localhost:5174",
+                        "http://localhost:5175",
                         "https://smartcart-y5u5.vercel.app"
                 )
                 .allowedMethods(
@@ -20,6 +22,7 @@ public class CorsConfig implements WebMvcConfigurer {
                         "POST",
                         "PUT",
                         "DELETE",
+                        "PATCH",
                         "OPTIONS"
                 )
                 .allowedHeaders("*");
